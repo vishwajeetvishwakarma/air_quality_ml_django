@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container py-5">
+
+    <h2>Air Particle</h2>
+    {{ air_graph|safe }}
+    <h2 class="mt-5">AQI-IN</h2>
+    {{ aqi_in_graph|safe }}
+    <h2 class="mt-5">PM2.5</h2>
+    {{ pm2_graph|safe }}
+    <h2 class="mt-5">PM10</h2>
+    {{ pm10_graph|safe }}
+    
+</div>
+{% endblock content %}
